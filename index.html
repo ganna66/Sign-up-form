@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="container">
+      <h2>Sign Up</h2>
+      <fieldset>
+        <legend>1️⃣ Your Basic Info</legend>
+
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          maxlength="15"
+          class="box 1"
+          required
+        /><br /><br />
+        <label for="mail">Email:</label><br />
+        <input
+          id="mail"
+          type="email"
+          name="email"
+          class="box 2"
+          required
+        /><br /><br />
+        <label for="pass">Password:</label><br />
+        <input
+          id="pass"
+          type="password"
+          name="password"
+          class="box 3"
+          required
+          minlength="8"
+          maxlength="20"
+          title="Must contain at least 8 characters"
+        /><br /><br />
+        <label>Age:</label><br />
+        <input type="radio" name="age" value="under-16" id="x" /><label for="x"
+          >Under 16</label
+        ><br />
+        <input type="radio" name="age" value="over-16" id="y" /><label for="y"
+          >Over 16</label
+        >
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>2️⃣ Your Profile</legend>
+
+        <label for="bio">Bio:</label><br />
+        <textarea
+          cols="30"
+          rows="4"
+          name="bio"
+          class="bioArea"
+          id="bio"
+        ></textarea
+        ><br /><br />
+        <label for="jr">Job Role:</label><br />
+        <select name="job-role" id="jr" class="box 4" required>
+          <option>Frontend Developer</option>
+          <option>PHP Develover</option>
+          <option>Web designer</option>
+          <option>Python Developer</option>
+          <option>Word Press Developer</option>
+          <option>Rails Developer</option></select
+        ><br /><br />
+
+        <label>Interests:</label><br />
+        <input
+          id="development"
+          type="checkbox"
+          name="interest"
+          value="Development"
+        /><label for="development">Development</label><br />
+        <input
+          id="design"
+          type="checkbox"
+          name="interest"
+          value="Design"
+        /><label for="design">Design</label><br />
+        <input
+          id="business"
+          type="checkbox"
+          name="interest"
+          value="Business"
+        /><label for="business">Business</label><br />
+      </fieldset>
+      <br /><br />
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </body>
+</html>
