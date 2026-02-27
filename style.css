@@ -7,8 +7,8 @@ body {
   font: 1.2em;
   background-color: #dbdada;
   padding: 30px;
-  margin: 0 auto;
-  width: 30%;
+  margin: 20px auto;
+  width: 90%;
   max-width: 500px;
   border-radius: 20px;
 }
@@ -54,4 +54,5 @@ select {
   font-size: 18px; 
   color: #000000;
   font-family: cursive;
+
 }
